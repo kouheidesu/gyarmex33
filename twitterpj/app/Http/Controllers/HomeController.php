@@ -6,6 +6,16 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    use AuthenticatesUsers;
+ 
+    /**
+     * Where to redirect users after login.
+     *
+     * @var string
+     */
+    protected $redirectTo = '/home';
+　
+ 
     /**
      * Create a new controller instance.
      *
@@ -13,16 +23,14 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('guest')->except('logout');
+    }
+  
+    public function username()
+    {
+      return 'name';
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function index()
-    {
-        return view('home');
-    }
 }
+
+

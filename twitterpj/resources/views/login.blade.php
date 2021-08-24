@@ -15,8 +15,8 @@
 	<header>
 		<img src="../../img/logo.png" alt="" class="logo">
 		<ul class="nav-list">
-			<li class="nav-list-item">新規登録</li>
-			<li class="nav-list-item">ログイン</li>
+			<li class="nav-list-item"><a onclick="location.href='./register.blade.php'">新規登録</a></li>
+			<li class="nav-list-item"><a onclick="location.href='./login.blade.php'">ログイン</a></li>
 		</ul>
 	</header>
 	<div class="main-item">
@@ -28,7 +28,7 @@
 				<li class="box-text-item"><input type="text" placeholder="メールアドレス" name="mail"></li>
 				<li class="box-text-item"><input type="text" placeholder="パスワード" name="password"></li>
 			</ul>
-			<button class="favoritestyled" type="button">
+			<button class="favoritestyled" type="button" onclick="location.href='./home.blade.php'">
 				ログイン
 			</button>
 		</div>

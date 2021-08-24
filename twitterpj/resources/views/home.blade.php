@@ -16,10 +16,10 @@
 		<img src="../../img/logo.png" alt="" class="logo">
 	</header>
 	<div class="main-text">ホーム</div>
-	<p class="text"><img src="../../img/home.png" alt="" class="home-img">
-		ホーム</p>
-	<p class="text"><img src="../../img/logout.png" alt="" class="logout-img">
-		ログアウト</p>
+	<p class="text"><img src="../../img/home.png" alt="" class="home-img"><a onclick="location.href='./home.blade.php'">ホーム</a>
+	</p>
+	<p class="text"><img src="../../img/logout.png" alt="" class="logout-img"><a onclick="location.href='./login.blade.php'">ログアウト</a>
+	</p>
 	<div class="share-box">
 		<p class="share">シェア</p>
 		<div class="shares">
